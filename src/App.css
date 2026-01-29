@@ -6,14 +6,35 @@
 }
 
 .app{
+    position: relative;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("./images/img-1.jpg");
+    /* background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("./images/img-1.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
+
+}
+.app::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  animation: fadeSlide 35s infinite;
+  z-index: -1;
+}
+@keyframes fadeSlide {
+  0%, 100% { background-image: url("./images/img-1.jpg"); }
+  14% { background-image: url("./images/img-2.jpg"); }
+  /* 28% { background-image: url("./images/img-3.jpg"); } */
+  /* 42% { background-image: url("./images/img-4.jpg"); }
+  56% { background-image: url("./images/img-5.jpg"); }
+  70% { background-image: url("./images/img-6.jpg"); }
+  84% { background-image: url("./images/img-7.jpg"); } */
 }
 .card{
     /* background-color: whitesmoke; */

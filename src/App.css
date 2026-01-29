@@ -16,7 +16,8 @@
     text-align: center;
 }
 .card{
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    background-color: #9266CC;
     width: 40%;
     height: 20%;
     display: flex;
@@ -46,7 +47,8 @@
     height: 200px;
     width: 210px;
     opacity: 1;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: #FEFEFE;
     border: 1px solid rgba(22, 76, 167, 0.6);
   }
     
